@@ -10,7 +10,7 @@ import os
 # Query required information/s                                                 #
 ###############################################################################
 
-UFSATM_path = os.environ['UFSATM_PATH']
+ufsatm_path = os.environ['UFSATM_PATH']
 
 ###############################################################################
 # Definitions                                                                 #
@@ -61,7 +61,7 @@ SCHEME_FILES = [
     '{}/ccpp/physics/physics/SFC_Models/Ocean/UFS/sfc_ocean.F'.format(ufsatm_path),
     '{}/ccpp/physics/physics/SFC_Layer/UFS/sfc_diff.f'.format(ufsatm_path),
     '{}/ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_surface_loop_control_part1.F90'.format(ufsatm_path),
-    '{}/ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_surface_loop_control_part2.F90'.format(_path),
+    '{}/ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_surface_loop_control_part2.F90'.format(ufsatm_path),
     '{}/ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_surface_composites_pre.F90'.format(ufsatm_path),
     '{}/ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_surface_composites_post.F90'.format(ufsatm_path),
     '{}/ccpp/physics/physics/SFC_Layer/UFS/sfc_diag.f'.format(ufsatm_path)
